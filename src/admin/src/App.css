@@ -1,0 +1,20 @@
+.ui.text.container {
+  max-width: 1000px!important;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.noBorder {
+  border: 0px !important;
+}
+
+.sideBarWidth {
+  width: 170px !important;
+  height: 20000px !important;
+}
+
+body{
+  min-width:760px; 
+}

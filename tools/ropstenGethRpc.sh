@@ -1,0 +1,1 @@
+geth --testnet --syncmode=light --cache=1024 --rpc --ws

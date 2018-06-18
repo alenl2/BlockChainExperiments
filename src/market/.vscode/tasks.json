@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "install",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "install"
+            ]
+        },
+        {
+            "label": "start",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "run", "start"
+            ]
+        },
+        {
+            "label": "docker",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "run", "docker"
+            ]
+        }
+    ]
+}

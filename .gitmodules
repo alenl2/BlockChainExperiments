@@ -1,0 +1,6 @@
+[submodule "zeppelin-solidity"]
+	path = zeppelin-solidity
+	url = https://github.com/alenl2/openzeppelin-solidity
+[submodule "solidity-flattener"]
+	path = solidity-flattener
+	url = https://github.com/poanetwork/solidity-flattener

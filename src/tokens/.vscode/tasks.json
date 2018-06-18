@@ -1,0 +1,100 @@
+{
+    "version": "2.0.0",
+    "command": "truffle",
+    "echoCommand": true,
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "tasks": [
+        {
+            "label": "install",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "install"
+            ]
+        },
+        {
+            "label": "develop",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "run", "develop"
+            ]
+        },
+        {
+            "label": "migrate-develop",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "run", "migrage-develop"
+            ]
+        },
+        {
+            "label": "migrate-rpc",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "run", "migrate-rpc"
+            ]
+        },
+        {
+            "label": "migrate-ourchain",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "run",  "migrate-ourchain"
+            ]
+        },
+        {
+            "label": "remix",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "run", "remix"
+            ]
+        }
+    ]
+}

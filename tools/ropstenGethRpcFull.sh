@@ -1,0 +1,1 @@
+geth --testnet --syncmode=fast --cache=2048 --rpc --ws

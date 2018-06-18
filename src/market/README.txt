@@ -1,0 +1,1 @@
+Adopted from https://github.com/OpenZeppelin/token-marketplace

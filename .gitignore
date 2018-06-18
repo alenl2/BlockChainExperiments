@@ -1,18 +1,19 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/dist-server
-/tmp
-/out-tsc
+dist/
+dist-server/
+tmp/
+out-tsc/
+build/
 
 # dependencies
-/node_modules
+node_modules/
 
 # IDEs and editors
-/.idea
-.project
-.classpath
+.idea/
+.project/
+.classpath/
 .c9/
 *.launch
 .settings/
@@ -42,3 +43,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+.vs/
+/geth-tools/data
+/geth-tools/dataMiner
+/.editorconfig
+
+# csharp
+bin/
+obj/
+geth/

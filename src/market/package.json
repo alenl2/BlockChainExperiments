@@ -1,0 +1,35 @@
+{
+  "name": "our-market",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https:///",
+  "dependencies": {
+    "node-sass": "latest",
+    "npm-run-all": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "redux": "latest",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "latest",
+    "semantic-ui-css": "latest",
+    "semantic-ui-react": "latest",
+    "truffle-blockchain-utils": "github:trufflesuite/truffle-blockchain-utils#master",
+    "truffle-contract": "latest",
+    "truffle-solidity-loader": "latest",
+    "web3": "github:ethereum/web3.js#develop"
+  },
+  "scripts": {
+    "build-css": "node-sass src/app.scss -o src/",
+    "watch-css": "npm run build-css && node-sass src/app.scss -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "docker": "npm run build && docker build -t sublime.zapto.org/our-market:latest . && docker push sublime.zapto.org/our-market:latest"
+  }
+}

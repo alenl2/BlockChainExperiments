@@ -1,0 +1,12 @@
+{
+  "name": "our-coin",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "scripts": {
+    "start": "dotnet run --project ./OurBackend/OurBackend.csproj",
+    "build": "dotnet publish OurBackend/OurBackend.csproj -c Release -o ../build",
+    "test": "dotnet test ./OurBackend/OurBackend.csproj",
+    "docker": "npm run build && docker build -t sublime.zapto.org/our-backend:latest . && docker push sublime.zapto.org/our-backend:latest"
+  }
+}

@@ -1,0 +1,7 @@
+.ui.text.container {
+    max-width: 2000px!important;
+}
+
+body{
+    min-width:760px;
+  }

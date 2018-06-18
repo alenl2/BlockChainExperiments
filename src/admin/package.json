@@ -1,0 +1,25 @@
+{
+  "name": "our-coin",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https:///",
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "truffle-blockchain-utils": "github:trufflesuite/truffle-blockchain-utils#master",
+    "truffle-contract": "latest",
+    "truffle-solidity-loader": "latest",
+    "web3": "github:ethereum/web3.js#develop",
+    "semantic-ui-css": "latest",
+    "semantic-ui-react": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "docker": "npm run build && docker build -t sublime.zapto.org/our-admin:latest . && docker push sublime.zapto.org/our-admin:latest"
+  }
+}

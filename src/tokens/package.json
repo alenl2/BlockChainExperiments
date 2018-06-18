@@ -1,0 +1,23 @@
+{
+  "name": "our-coin",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "ethereumjs-abi": "latest",
+    "truffle-core": "latest",
+    "truffle-privatekey-provider": "latest",
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "chai-bignumber": "latest",
+    "truffle": "latest",
+    "remixd": "latest"
+  },
+  "scripts": {
+    "develop": "node node_modules/truffle/build/cli.bundled.js develop",
+    "debug": "node node_modules/truffle/build/cli.bundled.js debug",
+    "migrate-develop": "node node_modules/truffle/build/cli.bundled.js migrate --reset --network develop",
+    "migrate-localrpc": "node node_modules/truffle/build/cli.bundled.js migrate --reset --network localrpc",
+    "migrate-ourchain": "node node_modules/truffle/build/cli.bundled.js migrate --reset --network ourchain",
+    "remix": "remixd -s ."
+  }
+}

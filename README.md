@@ -1,27 +1,110 @@
-# OurCoin
+# Global Install
+git,node,geth,vs-code,truffle,remixd,yarn,build tools for your OS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+## Windows (powershell) 
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+choco install git nodejs vscode yarn tortoisegit kubernetes-cli minikube -y
+npm install -g --production windows-build-tools
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+minikube start --vm-driver hyperv --hyperv-virtual-switch "Default Switch"
 
-## Development server
+lxrun /install /y
+bash -c "sudo do-release-upgrade"
+bash -c "sudo apt-get update"
+bash -c "sudo apt-get upgrade -y"
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Linux
+```
+# TODO
+```
 
-## Code scaffolding
+# Developing
+```
+# start truffle develop in the contracts folder
+cd contracts
+npm install
+truffle develop
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# add rpc from the console to metamask custom rpc
+# import the private key provided in the console
 
-## Build
+# inside the truffle develop console run when you made changes in the contracts
+migrate --reset --all
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+# open a new terminal
+# start react development server
 
-## Running unit tests
+cd gui
+npm install
+npm run start
+# no need to do anything anymore since auto reload is working
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Debugging
+## Truffle
+```
+# In truffle develop console get the latest transcaction hash
+web3.eth.getBlock("latest").transactions
+# To open the debugger run
+debug {tx}
+# Folow onscreen instuctions
+```
+## Gui
+Use https://remix.ethereum.org/ for contracts and chrome debugger for gui
+```
+# to share local files to remix you need to start remix deamon
+npm run remix
+```
 
-## Running end-to-end tests
+# Testing
+```
+# Run unit tests
+npm run test
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#Deployment
+```
+# sync your deisred chain using the correct script in the tools folder 
 
-## Further help
+# run truffle migrations from contracts folder
+cd contracts
+truffle migrate --reset --all
+cd ..
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# compile gui inside the gui folder
+cd gui
+# Set homepage to something like /test in package.json in gui folder so that your app runs inside a subfolder
+npm run build
+cd ..
+
+# deploy gui to the server
+npm install
+npm run deploy
+```
+
+
+
+
+
+
+# Knowledge base
+
+## Wallet unlock
+web3.personal.unlockAccount(web3.personal.listAccounts[0],"123321qweewq", 15000)
+
+## Combine sol-s for etherscan
+```
+cd solidity-flattener
+npm install
+npm start "..\contracts\contracts\Combined.sol"
+```
+
+## Create symlink on windows
+```
+# Run cmd as administrator
+cd src\admin\src\contracts
+mklink /d tokens ..\..\..\tokens\build\contracts
+```

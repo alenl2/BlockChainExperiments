@@ -1,0 +1,43 @@
+Backend
+	https://github.com/dotnet/core
+	https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1
+	https://docs.microsoft.com/en-us/ef/core/
+	https://github.com/RSuter/NSwag
+	https://github.com/JamesNK/Newtonsoft.Json
+	https://github.com/dotnet-state-machine/stateless
+	https://github.com/FakeItEasy/FakeItEasy
+	https://github.com/xunit/xunit
+	https://www.postgresql.org/
+	https://www.keycloak.org/
+
+Devops
+	https://xenserver.org/
+	https://www.centos.org/
+	https://www.nginx.com/
+	https://www.docker.com/
+	https://gitlab.com/
+	https://kubernetes.io/
+	https://www.ansible.com/
+	https://mathias-kettner.de/check_mk.html
+	https://www.elastic.co/products/elasticsearch
+	https://grafana.com/
+	https://graphiteapp.org/
+	https://www.elastic.co/products/kibana
+
+
+Frontend
+	https://yarnpkg.com/lang/en/
+	https://reactjs.org/
+	https://www.npmjs.com/package/react-scripts
+	https://github.com/sass/node-sass
+	https://facebook.github.io/jest/
+	https://reacttraining.com/react-router/
+	https://react.semantic-ui.com/introduction
+	https://redux.js.org/
+	https://prettier.io/
+
+Chain
+	https://ethereum.github.io/go-ethereum/downloads/
+	http://truffleframework.com/
+	https://zeppelinos.org/
+	

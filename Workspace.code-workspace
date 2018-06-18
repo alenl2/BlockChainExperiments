@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src\\admin"
+		},
+		{
+			"path": "src\\market"
+		},
+		{
+			"path": "src\\tokens"
+		},
+		{
+			"path": "src\\ico"
+		},
+		{
+			"path": "src\\backend"
+		},
+		{
+			"path": "src\\explorer"
+		}
+	],
+	"settings": {}
+}
